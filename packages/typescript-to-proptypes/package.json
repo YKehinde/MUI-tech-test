@@ -1,0 +1,33 @@
+{
+  "name": "typescript-to-proptypes",
+  "version": "5.0.0-alpha.15",
+  "private": true,
+  "description": "Generate proptypes from TypeScript declarations",
+  "engines": {
+    "node": ">=10.3.0"
+  },
+  "files": [
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mui-org/material-ui.git",
+    "directory": "packages/typescript-to-proptypes"
+  },
+  "author": "merceyz <merceyz@users.noreply.github.com>",
+  "license": "MIT",
+  "keywords": [
+    "proptypes",
+    "typescript",
+    "react"
+  ],
+  "scripts": {
+    "test": "cd ../../ && cross-env NODE_ENV=test mocha --config packages/typescript-to-proptypes/.mocharc.js 'packages/typescript-to-proptypes/**/*.test.ts'",
+    "typescript": ""
+  },
+  "devDependencies": {
+    "@types/doctrine": "^0.0.3"
+  },
+  "dependencies": {
+  }
+}

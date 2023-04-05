@@ -1,0 +1,67 @@
+/* In case you would like to use CSS modules */
+.comboBox {
+  position: relative;
+  width: 640px;
+}
+
+.comboBox .comboBoxInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.comboBox .comboBoxToggle {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+  text-align: left;
+}
+
+.comboBox .comboBoxToggle:focus,
+.comboBox .comboBoxItems button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.comboBox .comboBoxItems {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.comboBox .comboBoxItems button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+}
+
+.comboBox .comboBoxItems button:hover,
+.comboBox .comboBoxItems button:focus {
+  background-color: #f2f2f2;
+}

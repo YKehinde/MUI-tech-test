@@ -1,0 +1,65 @@
+.combo-box {
+  position: relative;
+  width: 320px;
+}
+
+.combo-box .combo-box-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.combo-box .combo-box-toggle {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.combo-box .combo-box-toggle:focus,
+.combo-box .combo-box-items button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.combo-box .combo-box-items {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.combo-box .combo-box-items button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+}
+
+.combo-box .combo-box-items button:hover,
+.combo-box .combo-box-items button:focus {
+  background-color: #f2f2f2;
+}
